@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Ineery",
-  description: "Ihsan Restu Adi.",
+  description: "Ihsan Restu Adi Portfolio Website.",
 };
 
 export default function RootLayout({
