@@ -6,12 +6,12 @@ import Link from 'next/link';
 export function Hero() {
   const textVariants = {
     hidden: { opacity: 0, y: 30 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" as any } },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } as const},
   };
 
   const buttonVariants = {
     hidden: { opacity: 0, y: 20 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" as any, delay: 0.4 } },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" , delay: 0.4 } as const },
   };
 
   return (
@@ -33,7 +33,7 @@ export function Hero() {
           variants={textVariants}
           transition={{ delay: 0.2 }}
         >
-          Ineery is <strong>more than</strong> just a portfolio — it's a <strong>reflection of curiosity, growth, and a commitment</strong> to building purposeful digital solutions. Dive into my work and discover how I turn concepts into <strong>clean, modern, and meaningful</strong> experiences
+          Ineery is <strong>more than</strong> just a portfolio — it&apos;s a <strong>reflection of curiosity, growth, and a commitment</strong> to building purposeful digital solutions. Dive into my work and discover how I turn concepts into <strong>clean, modern, and meaningful</strong> experiences
         </motion.p>
 
         <motion.div
@@ -46,7 +46,7 @@ export function Hero() {
             className="bg-transparent border-primary text-primary hover:bg-primary hover:text-primary-foreground px-8 py-6 text-lg rounded-full shadow-lg transition-all duration-300 transform"
             href='#aboutme'
           >
-            Let's go 
+            Let&apos;s go 
           </Link>
         </motion.div>
       </div>

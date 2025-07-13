@@ -12,7 +12,7 @@ interface FeatureCardProps {
 export function FeatureCard({ icon: Icon, title, description, delay = 0 }: FeatureCardProps) {
   const cardVariants = {
     hidden: { opacity: 0, y: 50 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.7, delay: delay, ease: "easeOut" as any} },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.7, delay: delay, ease: "easeOut"} as const },
   };
 
   return (

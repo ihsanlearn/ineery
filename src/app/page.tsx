@@ -10,7 +10,7 @@ import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { Button } from '@/components/ui/button';
 import Skills from '@/components/big/Skills';
-import { SiGithub, SiInstagram, SiLinkedin, SiMaildotru, SiWhatsapp } from 'react-icons/si';
+import { SiGithub, SiInstagram, SiLinkedin, SiMaildotru } from 'react-icons/si';
 import { Textarea } from '@/components/ui/textarea';
 import { Label } from '@/components/ui/label';
 import { Input } from '@/components/ui/input';

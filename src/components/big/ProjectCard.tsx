@@ -1,4 +1,4 @@
-import { Card, CardHeader, CardTitle, CardDescription, CardContent } from '@/components/ui/card';
+import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
 import Image from 'next/image';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
@@ -13,13 +13,10 @@ interface LatestNewsCardProps {
   delay?: number;
 }
 
-const getPlaceholderImage = (width: number, height: number, text?: string) =>
-`https://placehold.co/${width}x${height}${text ? `?text=${encodeURIComponent(text)}` : ""}`;
-
 export function ProjectCard({ tech, imagePath, title, description, linkHref, delay = 0 }: LatestNewsCardProps) {
   const cardVariants = {
     hidden: { opacity: 0, y: 50 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.7, delay: delay, ease: "easeOut" as any} },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.7, delay: delay, ease: "easeOut"} as const},
   };
 
   return (
